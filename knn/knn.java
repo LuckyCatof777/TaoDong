@@ -7,8 +7,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 
 public class Knn {
-    /* knn 方法
-     */
+
     public void knn(List<List<String>> trainData, List<List<String>> testData, int k) throws SQLException {
 
         int i = 0;

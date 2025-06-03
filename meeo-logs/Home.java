@@ -5,7 +5,16 @@ import java.util.*;
 
 public class Home {
     public static void main(String[] args) throws SQLException {
+        conn con = new conn();
+        con.conn();
 
+        List<List<String>> trainData = con.getTrainData();
+        List<List<String>> testData = con.getTestData();
+        int k = 1;
+        Knn test = new Knn();
+        test.knn(trainData, testData, k);
+
+        Pro.initializeProductDatabase();
         list();
     }
 
